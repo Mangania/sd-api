@@ -1,5 +1,12 @@
 # Stable Diffusion Api
 
+This is a fork of the [original project](https://github.com/jaschahuisman/sd-api), what it does:
+
+ - Fixed the issue of the function `setModel`, click [here](https://github.com/jaschahuisman/sd-api/issues/8) to learn more.
+ - Built with RollUp, contains both CJS and ESM. The original one is built by TSC.
+
+---
+
 ![npm](https://img.shields.io/npm/v/stable-diffusion-api)
 ![npm](https://img.shields.io/npm/dw/stable-diffusion-api)
 ![GitHub](https://img.shields.io/github/license/jaschahuisman/sd-api)

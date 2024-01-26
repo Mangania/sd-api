@@ -1,9 +1,10 @@
 {
-  "name": "stable-diffusion-api",
+  "name": "@lancercomet/sd-api",
   "version": "0.0.6",
   "description": "API translation for Automatic1111 Stable Diffusion WebUI",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.esm.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
@@ -24,15 +25,20 @@
     "stable-diffusion-webui"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "rollup -c"
   },
   "devDependencies": {
+    "@kineticcafe/rollup-plugin-delete": "^3.0.0-beta.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-typescript": "^11.1.6",
     "@types/axios": "^0.14.0",
     "@types/deasync": "^0.1.2",
     "@types/node": "^18.15.11",
     "@types/sharp": "^0.31.1",
     "@types/string-similarity": "^4.0.0",
+    "rollup": "^4.9.6",
     "ts-node": "^10.9.1",
+    "tslib": "^2.6.2",
     "typescript": "^5.0.3"
   },
   "dependencies": {
